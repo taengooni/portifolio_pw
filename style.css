@@ -1,0 +1,98 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4e4c1;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #d2a039;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+nav {
+  background-color: #f4e4c1;
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Seções */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: left; /* Mantém o texto alinhado à esquerda */
+}
+
+h2 {
+  font-size: 2rem;
+  color: #d2a039;
+}
+
+.perfil-img {
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tema escuro */
+.dark-theme {
+  background-color: #333;
+  color: #FFD700;
+}
+
+.dark-theme header {
+  background-color: #444;
+}
+
+.dark-theme nav ul li a {
+  color: #FFD700;
+}
+
+.dark-theme section {
+  background-color: #444;
+  color: #FFD700;
+}
+
+/* Centralização de títulos e conteúdo */
+header .header-center {
+  text-align: center;
+}
+
+
+  

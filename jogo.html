@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Senha - Bulls and Cows</title>
+    <link rel="stylesheet" href="jogo.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo Senha - Bulls and Cows</h1>
+    </header>
+
+    <section id="game">
+        <div class="game-container">
+            <p>Tente adivinhar o número secreto!</p>
+            <input type="text" id="guessInput" placeholder="Digite sua tentativa (4 dígitos)">
+            <button id="guessBtn">Enviar Tentativa</button>
+            <button id="showSecret">Mostrar Senha Secreta</button>
+
+            <h2>Tentativas Anteriores</h2>
+            <ul id="guessList"></ul>
+
+            <h2>Resultado</h2>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio</p>
+    </footer>
+
+    <script src="jogo.js"></script>
+</body>
+</html>
