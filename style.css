@@ -72,27 +72,40 @@ h2 {
 
 /* Tema escuro */
 .dark-theme {
-  background-color: #333;
-  color: #FFD700;
+  background-color: #5271ff;
+  color: white;
 }
 
 .dark-theme header {
-  background-color: #444;
+  background-color: #142ea2;
 }
 
 .dark-theme nav ul li a {
-  color: #FFD700;
+  color: black;
 }
 
 .dark-theme section {
-  background-color: #444;
+  background-color: #5271ff;
   color: #FFD700;
 }
 
-/* Centralização de títulos e conteúdo */
+
 header .header-center {
   text-align: center;
 }
 
+.welcome {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffa8e7;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+}
 
   
