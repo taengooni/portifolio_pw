@@ -127,7 +127,7 @@ header .header-center {
 
 #contato i {
   margin-right: 8px; /* Espaço entre o ícone e o texto */
-  color: #0077b5; /* Cor do ícone (por exemplo, azul para LinkedIn) */
+  color: #000000; /* Cor do ícone (por exemplo, azul para LinkedIn) */
   transition: color 0.3s; /* Efeito ao passar o mouse */
 }
 
