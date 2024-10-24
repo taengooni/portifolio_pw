@@ -81,7 +81,7 @@ h2 {
 }
 
 .dark-theme nav ul li a {
-  color: black;
+  color: white;
 }
 
 .dark-theme section {
@@ -108,4 +108,29 @@ header .header-center {
   z-index: 1000;
 }
 
-  
+.sobre-mim {
+  display: flex;
+  align-items: center; /* Alinha verticalmente ao centro */
+  margin-top: 1rem; /* Espaço acima do conteúdo */
+}
+
+.perfil-img {
+  width: 300px; /* Ajuste o tamanho conforme necessário */
+  border-radius: 40%; /* Mantém a imagem redonda */
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+#contato p {
+  font-size: 1.2rem; /* Ajuste o tamanho da fonte */
+  margin: 0.5rem 0; /* Espaçamento entre os parágrafos */
+}
+
+#contato i {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+  color: #0077b5; /* Cor do ícone (por exemplo, azul para LinkedIn) */
+  transition: color 0.3s; /* Efeito ao passar o mouse */
+}
+
+#contato a:hover i {
+  color: #005582; /* Cor ao passar o mouse */
+}
