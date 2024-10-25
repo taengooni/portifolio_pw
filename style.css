@@ -10,10 +10,17 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #d2a039;
+  background-color:#d2a039 ;
   color: white;
   padding: 2rem 0;
   text-align: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -53,7 +60,7 @@ section {
   max-width: 900px;
   margin: 2rem auto;
   padding: 1.5rem;
-  text-align: left; /* Mantém o texto alinhado à esquerda */
+  text-align: left; 
 }
 
 h2 {
@@ -70,9 +77,9 @@ h2 {
   margin-right: auto;
 }
 
-/* Tema escuro */
+
 .dark-theme {
-  background-color: #5271ff;
+  background-color: #1a1a2e;
   color: white;
 }
 
@@ -86,7 +93,7 @@ h2 {
 
 .dark-theme section {
   background-color: #5271ff;
-  color: #FFD700;
+  color: #ffffff;
 }
 
 
@@ -110,27 +117,105 @@ header .header-center {
 
 .sobre-mim {
   display: flex;
-  align-items: center; /* Alinha verticalmente ao centro */
-  margin-top: 1rem; /* Espaço acima do conteúdo */
+  align-items: center; 
+  margin-top: 1rem; 
 }
 
 .perfil-img {
-  width: 300px; /* Ajuste o tamanho conforme necessário */
-  border-radius: 40%; /* Mantém a imagem redonda */
-  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  width: 300px; 
+  border-radius: 40%; 
+  margin-right: 20px; 
 }
 
 #contato p {
-  font-size: 1.2rem; /* Ajuste o tamanho da fonte */
-  margin: 0.5rem 0; /* Espaçamento entre os parágrafos */
+  font-size: 1.3rem; 
+  margin: 0.5rem 0; 
 }
 
 #contato i {
-  margin-right: 8px; /* Espaço entre o ícone e o texto */
-  color: #000000; /* Cor do ícone (por exemplo, azul para LinkedIn) */
-  transition: color 0.3s; /* Efeito ao passar o mouse */
+  margin-right: 8px; 
+  color: #000000; 
+  transition: color 0.3s; 
 }
 
 #contato a:hover i {
-  color: #005582; /* Cor ao passar o mouse */
+  color: #005582; 
+}
+
+
+#themeSwitcher {
+  background: linear-gradient(135deg, #fff8b5, #fffc65);
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#themeSwitcher i {
+  transition: transform 0.3s;
+}
+
+#themeSwitcher:hover {
+  background: linear-gradient(135deg, #957dff, #6827ff);
+  color: #fff;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+#themeSwitcher:active {
+  transform: scale(0.95);
+}
+
+#themeSwitcher.dark-theme {
+  background: linear-gradient(135deg, #5271ff, #142ea2);
+  color: #FFD700;
+}
+
+#themeSwitcher.dark-theme i {
+  color: #FFD700;
+}
+
+#themeSwitcher i {
+  transform: rotate(0deg);
+}
+
+#themeSwitcher.dark-theme i {
+  transform: rotate(180deg);
+}
+
+
+.dark-theme section {
+  background-color: #1a1a2e; 
+  color: #f0f0f0; 
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dark-theme h2 {
+  color: #ffffff; 
+
+.dark-theme nav {
+  background-color: #142ea2; 
+}
+
+.dark-theme nav ul li a {
+  color: #f0f0f0; 
+}
+
+
+.dark-theme #contato a {
+  color: #ffffff; 
+}
+
+.dark-theme footer {
+  background-color: #142ea2; 
+  color: #f0f0f0;
 }
