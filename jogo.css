@@ -145,3 +145,14 @@ footer {
 .dark-mode button:hover {
     background-color: #005681; 
 }
+
+#successMessage {
+    display: none;
+    color: green;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dark-mode #successMessage {
+    color: #9fff9f; /* Um tom de verde claro para o modo escuro */
+}

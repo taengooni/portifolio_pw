@@ -12,18 +12,28 @@ function generateSecretNumber() {
 
 function makeGuess() {
     const guess = document.getElementById('guessInput').value;
+    const successMessage = document.getElementById('successMessage');
+    
+    // Limpa a mensagem de sucesso para cada nova tentativa
+    successMessage.style.display = 'none';
+
     if (guess.length !== 4 || isNaN(guess)) {
         alert('Digite um número de 4 dígitos!');
         return;
     }
-    
+
     const result = getBullsAndCows(guess, secretNumber);
     attempts.unshift(`Tentativa: ${guess} | Resultado: ${result.bulls} Bulls, ${result.cows} Cows`);
-    
+
     document.getElementById('guessList').innerHTML = attempts.map(attempt => `<li>${attempt}</li>`).join('');
     document.getElementById('result').textContent = `Última tentativa: ${guess} | ${result.bulls} Bulls, ${result.cows} Cows`;
 
     document.getElementById('guessInput').value = '';
+
+    // Verifica se o usuário acertou o número
+    if (result.bulls === 4) {
+        successMessage.style.display = 'block';
+    }
 }
 
 function getBullsAndCows(guess, secret) {
