@@ -224,3 +224,4 @@ header .header-center {
 .dark-theme nav ul li a {  /* Increased specificity with child selector */
   color: rgb(240, 94, 94);
 }
+}
