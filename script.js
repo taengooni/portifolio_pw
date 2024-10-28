@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(welcomeMessage);
 
     setTimeout(function() {
-        welcomeMessage.style.opacity = "0";
+        welcomeMessage.classList.add('hidden'); // Adiciona a classe para animar a saída
         setTimeout(() => welcomeMessage.remove(), 500); 
     }, 3000); 
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const isDarkTheme = body.classList.toggle('dark-theme'); 
 
         
-        this.textContent = isDarkTheme ? 'Mudar para Tema Claro' : 'Mudar para Tema Escuro';
+        this.textContent = isDarkTheme ? 'Mudar tema' : 'Mudar tema';
     });
 
   
