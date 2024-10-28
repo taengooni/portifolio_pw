@@ -211,11 +211,16 @@ header .header-center {
 }
 
 
-.dark-theme #contato a {
+.dark-theme #contato {
   color: #ffffff; 
+  background-color: #142ea2;
 }
 
 .dark-theme footer {
   background-color: #142ea2; 
   color: #f0f0f0;
+}
+ 
+.dark-theme nav ul li a {  /* Increased specificity with child selector */
+  color: rgb(240, 94, 94);
 }

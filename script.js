@@ -47,3 +47,5 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector("#carousel").style.transform = `translateX(-${currentSlide * 100}%)`;
     }
 });
+
+
