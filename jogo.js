@@ -50,3 +50,12 @@ function getBullsAndCows(guess, secret) {
 
     return { bulls, cows };
 }
+function voltarParaPortifolio() {
+    window.location.href = "index.html"; 
+}
+
+const toggleThemeBtn = document.getElementById('toggleThemeBtn');
+toggleThemeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleThemeBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Modo Claro' : '🌙 Modo Escuro';
+});

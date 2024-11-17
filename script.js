@@ -56,4 +56,20 @@ document.addEventListener("scroll", () => {
     });
   });
 
+  const texto = "Olá! Me chamo Ayla Lopes, atualmente tenho 19 anos e curso Sistemas para Internet na Universidade Católica de Pernambuco. Além dessa graduação, no final do ano vou começar a cursar Pedagogia na Universidade Federal de Pernambuco. São duas áreas que pretendo agregar uma à outra na minha vida profissional futuramente. Além desses dois interesses, sou apaixonada por literatura, cinema e fotografia.";
+let i = 0;
+
+function digitar() {
+    if (i < texto.length) {
+        document.getElementById("texto-animado").innerHTML += texto.charAt(i);
+        i++;
+        setTimeout(digitar, 100); // O texto será digitado a cada 100ms
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    digitar(); // Iniciar o efeito de digitação
+});
+
+
   

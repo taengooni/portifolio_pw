@@ -262,14 +262,26 @@ nav ul li a:hover::after {
 footer {
   background-color: #fae5d0;
   color: rgb(0, 0, 0);
-  text-align: center; /* Centraliza o texto */
+  text-align: center; 
   padding: 1rem 0;
-  position: relative; /* Garante que está posicionado corretamente */
-  width: 100%; /* Ocupa toda a largura */
+  position: relative; 
+  width: 100%; 
 }
 
 footer p {
   margin: 0; 
   font-size: 1rem;
   font-weight:
+}
+
+#sobre-mim p {
+  font-family: League Spart, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+#texto-animado {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  color: #00f;
 }
