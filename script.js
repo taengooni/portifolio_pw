@@ -69,7 +69,6 @@ function digitarTexto() {
   }
 }
 
-// Iniciar o efeito de digitação assim que a página carregar
 window.onload = digitarTexto;
 
 
