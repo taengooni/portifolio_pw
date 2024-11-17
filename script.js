@@ -6,11 +6,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(welcomeMessage);
 
     setTimeout(function() {
-        welcomeMessage.classList.add('hidden'); // Adiciona a classe para animar a saída
+        welcomeMessage.classList.add('hidden'); 
         setTimeout(() => welcomeMessage.remove(), 500); 
     }, 3000); 
 
-    // Mudar tema
     document.getElementById("themeSwitcher").addEventListener("click", function() {
         const body = document.body;
         const isDarkTheme = body.classList.toggle('dark-theme'); 
@@ -48,4 +47,13 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+document.addEventListener("scroll", () => {
+    document.querySelectorAll('.fade-in').forEach(element => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 50) {
+        element.classList.add('visible');
+      }
+    });
+  });
 
+  
