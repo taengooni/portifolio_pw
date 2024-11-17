@@ -56,6 +56,21 @@ document.addEventListener("scroll", () => {
     });
   });
 
-  
+const textoAnimado = "Olá! Meu nome é Ayla Lopes. Sou estudante de Pedagogia e, além disso, estou me aventurando no mundo da programação. Estudo na Universidade Federal de Pernambuco e faço parte do programa Embarque digital na Universidade Católica de Pernambuco. Gosto de aprender novas tecnologias e sempre busco melhorar minhas habilidades! Além disso, sou apaixonada por literatura, cinema e fotografia.";
+const speed = 50; 
+let i = 0;
+const elementoTexto = document.getElementById('texto-animado');
+
+function digitarTexto() {
+  if (i < textoAnimado.length) {
+    elementoTexto.innerHTML += textoAnimado.charAt(i);
+    i++;
+    setTimeout(digitarTexto, speed);
+  }
+}
+
+// Iniciar o efeito de digitação assim que a página carregar
+window.onload = digitarTexto;
+
 
   

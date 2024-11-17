@@ -94,6 +94,7 @@ footer {
     background-color: #fae5d0;
     color: rgb(0, 0, 0);
     text-align: center;
+    margin: 150px;
     padding: 1rem;
 }
 
@@ -158,5 +159,5 @@ footer {
 }
 
 .dark-mode #successMessage {
-    color: #9fff9f; /* Um tom de verde claro para o modo escuro */
+    color: #9fff9f; 
 }
